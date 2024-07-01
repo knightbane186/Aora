@@ -30,8 +30,20 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Text style={styles.text}>Auro</Text>
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent:'center',
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 24,
+  },
+})
