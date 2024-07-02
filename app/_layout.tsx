@@ -2,6 +2,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import React, { useEffect } from 'react';
 import { Slot, SplashScreen, Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
+
+//this is prevent the splash screen from auto hiding before the asset loasding is complete. 
+SplashScreen.preventAutoHideAsync();
+
 const RootLayout = () => {
   //we are only trying to load the page here
   const [fontsLoaded, error] = useFonts({
