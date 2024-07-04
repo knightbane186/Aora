@@ -6,13 +6,14 @@ import { icons } from '../../constants';
 // TabIcon is a react functional component
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
-    <View style={{ alignItems: 'center', justifyContent: 'center', gap: 2 }}>
+    <View className="items-center justify-center gap-2">
       <Image
         source={icon}
         resizeMode='contain'
-        style={{ tintColor: color, width: 24, height: 24 }}
+        className="w-6 h-6"
+        style={{ tintColor: color }}
       />
-      <Text style={{ fontFamily: focused ? 'font-psemibold' : 'font-pregular', fontSize: 12 }}>
+      <Text className={`${focused ? 'font-psemibold' : 'font-pregular'} text-xs`} style={{ color }}>
         {name}
       </Text>
     </View>
@@ -23,7 +24,15 @@ const TabsLayout = () => {
   return (
     <Tabs
       screenOptions={{
-        tabBarShowLabel: false
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: '#ffa001',
+        tabBarInactiveTintColor: '#cdcde0',
+        tabBarStyle: {
+          backgroundColor: '#161622',
+          borderTopWidth: 1,
+          borderTopColor: '#232533',
+          height: 84,
+        },
       }}
     >
       <Tabs.Screen
