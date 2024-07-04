@@ -100,3 +100,5 @@ const TabsLayout = () => {
 };
 
 export default TabsLayout;
+
+//just typing this for fun
