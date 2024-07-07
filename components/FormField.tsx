@@ -17,6 +17,9 @@ const FormField = ({ title, value, placeholder, handleChangeText, otherStyles, .
           secureTextEntry={title === 'Password' && !showPassword}
           {...props} // Spread any additional props to the TextInput
         />
+ 
+ {title === 'Password'}
+
       </View>
     </View>
   );
