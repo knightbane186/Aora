@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import React, { useState } from 'react';
 
 const FormField = ({ title, value, placeholder, handleChangeText, otherStyles, ...props }) => {
@@ -18,7 +18,13 @@ const FormField = ({ title, value, placeholder, handleChangeText, otherStyles, .
           {...props} // Spread any additional props to the TextInput
         />
  
- {title === 'Password'}
+ {title === 'Password' && (
+<TouchableOpacity onPress={setShowPassword(!showPassword)}>
+<Image />
+
+</TouchableOpacity>
+
+ )}
 
       </View>
     </View>
