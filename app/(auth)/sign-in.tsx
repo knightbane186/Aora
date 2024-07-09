@@ -60,7 +60,7 @@ isLoading={isSubmitting}
 <Text className = "text-lg text-gray-100 font-pregular">
     Don't have an account?
 </Text>
-<Link >Sign-up </Link>
+<Link >Sign-up</Link>
 </View>
         </View>
       </ScrollView>
@@ -69,3 +69,6 @@ isLoading={isSubmitting}
 }
 
 export default SignIn;
+
+
+//adding for github purpose
