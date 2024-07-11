@@ -4,6 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '../../constants';
 import FormField from '@/components/FormField';
 import CustomButton from '@/components/CustomButton';
+import { Link } from 'expo-router';
+import signUp from './sign-up';
 
 const SignIn = () => {
 
@@ -60,7 +62,7 @@ isLoading={isSubmitting}
 <Text className = "text-lg text-gray-100 font-pregular">
     Don't have an account?
 </Text>
-<Link >Sign-up</Link>
+<Link href="/sign-up" className='text-lg font-psemibold text-secondary-100'>Sign-up</Link>
 </View>
         </View>
       </ScrollView>
@@ -71,4 +73,3 @@ isLoading={isSubmitting}
 export default SignIn;
 
 
-//adding for github purpose
