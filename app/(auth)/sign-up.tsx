@@ -49,6 +49,7 @@ email:e
           handleChangeText={(e) => setForm({
 ...form,
 password:e
+//adding thefeatures ontot he loadinf dock
           })}
           otherStyles="mt-7"
           />
