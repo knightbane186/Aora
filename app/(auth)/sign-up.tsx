@@ -50,6 +50,8 @@ email:e
 ...form,
 password:e
 //adding thefeatures ontot he loadinf dock
+
+//lockingh all the docks in this file 
           })}
           otherStyles="mt-7"
           />
