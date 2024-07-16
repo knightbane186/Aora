@@ -59,6 +59,8 @@ handlePress={submit}
 containerStyles="mt-7"
 isLoading={isSubmitting}
 
+//adding more formulation
+
 />
 <View className="justify-center pt-5 flex-row gap-2" >
 <Text className = "text-lg text-gray-100 font-pregular">
