@@ -60,6 +60,7 @@ containerStyles="mt-7"
 isLoading={isSubmitting}
 
 //adding more formulation
+//I dont know if i should be doing this 
 
 />
 <View className="justify-center pt-5 flex-row gap-2" >
